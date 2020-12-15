@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>
+        <?php echo $title; ?>
+    </title>
+    <style>
+        .header {
+            padding: 10px;
+            background-color: #78938A;
+            color: black;
+            overflow: hidden;
+        }
+
+        .topnav {
+            background-color: #262D37;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #78938A;
+            color: black;
+        }
+
+        .content {
+            width: 950px;
+            border: 2px solid #8F2F0E;
+            border-radius: 15px;
+            margin: 30px auto;
+            padding: 30px;
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 5px;
+            color: white;
+            width: 100%;
+            background-color: #8F2F0E;
+        }
+
+        table.result {
+            border: 2px solid #8F2F0E;
+            background-color: #FDFEFD;
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        table.result td,
+        table.result th {
+            border: 1px solid #8F2F0E;
+            padding: 3px 3px;
+        }
+
+        table.result tbody td {
+            font-size: 15px;
+        }
+
+        table.result tr:nth-child(even) {
+            background: #FDFEFD;
+        }
+
+        table.result thead {
+            background: #8F2F0E;
+            border-bottom: 1px solid #8F2F0E;
+        }
+
+        table.result thead th {
+            font-size: 17px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: center;
+            border-left: 2px solid #8F2F0E;
+        }
+
+        table.result thead th:first-child {
+            border-left: none;
+        }
+
+        .footer {
+            padding: 1px 0px;
+            width: 100%;
+            background-color: #78938A;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h3 style="float: left;">Library Information System</h3>
+        <h3 style="float: right;">
+            <?php date_default_timezone_set("Asia/Muscat"); echo date('l jS \of F Y h:i:s A'); ?>
+        </h3>
+    </div>
+    <div class="topnav">
+        <a href="index.php">Home</a>
+        <a href="NewBookForm.php">Adding New Book's data</a>
+    </div>
+    <div class="content">
